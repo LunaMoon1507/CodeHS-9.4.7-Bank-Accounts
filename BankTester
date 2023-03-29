@@ -1,0 +1,26 @@
+public class BankTester
+{
+    public static void main(String[] args)
+    {
+        // Test both of your classes
+        // Make sure you call every method you wrote!
+        
+        Account john = new Account(22222,200.45);
+        Account bob = new StudentAccount(1111, 200.45);
+        
+        System.out.println(john);
+        System.out.println(bob);
+        
+        john.withdraw(50.3);
+        bob.withdraw(50.3);
+        
+        System.out.println(john);
+        System.out.println(bob);
+        
+        john.deposit(100.25);
+        bob.deposit(100.25);
+        
+        System.out.println(john);
+        System.out.println(bob);
+    }
+}
